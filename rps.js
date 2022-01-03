@@ -14,6 +14,8 @@ Math.random(Math.floor() * 3);
 console.log()
 
 let getComputerChoice = computerChoice => {
+  computerChoice = computerChoice.toLowerCase();
+  
   switch (randomNumber) {
   case 0:
     return 'rock';
@@ -22,4 +24,5 @@ let getComputerChoice = computerChoice => {
   case 2:
     return 'scissors';
 };
+console.log(getComputerChoice(randomNumber));
 }
